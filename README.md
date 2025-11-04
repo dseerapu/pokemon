@@ -1,4 +1,4 @@
-# Pokemon App (Clean Architecture + Jetpack Compose)
+# Pokemon App (Clean Architecture + Jetpack Compose + MVVM + Micro Modular Architecture)
 
 A modular Android application built using Jetpack Compose, Clean Architecture, Hilt Dependency Injection, and Paging 3, following best practices for scalability and testability.
 

@@ -1,4 +1,4 @@
-# Pokémon App (Clean Architecture + Jetpack Compose)
+# Pokemon App (Clean Architecture + Jetpack Compose)
 
 A modular Android application built using Jetpack Compose, Clean Architecture, Hilt Dependency Injection, and Paging 3, following best practices for scalability and testability.
 
@@ -21,8 +21,8 @@ PokemonApi (Network - Retrofit + Okhttp)
 
 
 # Features
-* **Pokemon List** — Paginated list of Pokémon with search support
-* **Pokemon Detail** — Detailed screen showing Pokémon stats, types, abilities
+* **Pokemon List** — Paginated list of Pokemon with search support
+* **Pokemon Detail** — Detailed screen showing Pokemon stats, types, abilities
 * **Clean Architecture** — Domain-driven design with proper layer separation
 * **Modularization** — Independent feature modules with isolated dependencies
 * **Hilt for DI** — Scoped dependencies and feature-level navigator injection
@@ -65,12 +65,12 @@ The repository exposes a Pager that emits PagingData<Pokemon>, making pagination
 
 ### 4. :feature:pokemon-list
 #### Responsibility: 
-Displays a paginated list of Pokémon and supports search.
+Displays a paginated list of Pokemon and supports search.
 
 ##### ViewModel
 
 * Injects GetPokemonListUseCase and SearchPokemonUseCase
-* Collects paginated Pokémon data from repository
+* Collects paginated Pokemon data from repository
 * Handles UI states using ```PokemonListUiState```:
 ```
 - Loading
@@ -87,12 +87,12 @@ Displays a paginated list of Pokémon and supports search.
 
 ### 5. :feature:pokemon-detail
 #### Responsibility: 
-Displays detailed information about a selected Pokémon.
+Displays detailed information about a selected Pokemon.
 
 ##### ViewModel
 
 * Injects ```GetPokemonDetailUseCase```
-* Fetches Pokémon details using the provided ```pokemonId```
+* Fetches Pokemon details using the provided ```pokemonId```
 * Emits states via ```PokemonDetailUiState```:
 ```
 - Loading
@@ -103,7 +103,7 @@ Displays detailed information about a selected Pokémon.
 
 ##### UI
 
-* Displays Pokémon image, stats, types, abilities, and physical data
+* Displays Pokemon image, stats, types, abilities, and physical data
 
 ### State Management
 * Each feature uses its own UiState sealed class pattern:
